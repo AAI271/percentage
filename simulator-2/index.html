@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>🚀 Космический процентометр</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0d0b20">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🚀 Космический процентометр</h1>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+                <span id="progressText">0%</span>
+            </div>
+        </header>
+
+        <div class="space" id="space">
+            <!-- Звёзды и корабль появляются здесь -->
+        </div>
+
+        <div class="controls">
+            <div class="slider-container">
+                <input type="range" id="percentSlider" min="0" max="100" value="0">
+                <span id="percentValue">0%</span>
+            </div>
+
+            <div class="buttons">
+                <button id="btnEasy" class="active">👶 Новичок</button>
+                <button id="btnMedium">🛸 Пилот</button>
+                <button id="btnHard">👨‍🚀 Астронавт</button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <span>🌌 Всего звёзд:</span>
+                <span id="totalStars">10</span>
+            </div>
+            <div class="stat">
+                <span>✨ Собрано:</span>
+                <span id="collectedStars">0</span>
+            </div>
+            <div class="stat">
+                <span>📊 Процент:</span>
+                <span id="percentValueBig">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

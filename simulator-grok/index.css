@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Rounded MT Bold', 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #4b0082;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.game-area {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    max-height: 60vh;
+    background-color: #e6f7ff;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #4b0082;
+    color: white;
+}
+
+.score, .task {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #4b0082;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.level {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4b0082;
+}
+
+.info-panel {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-panel h2 {
+    color: #4b0082;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.info-panel p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.info-panel ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.info-panel li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+    
+    .score, .task {
+        font-size: 14px;
+    }
+    
+    button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    
+    .level {
+        font-size: 14px;
+    }
+    
+    .info-panel h2 {
+        font-size: 16px;
+    }
+    
+    .info-panel p, .info-panel li {
+        font-size: 13px;
+    }
+}

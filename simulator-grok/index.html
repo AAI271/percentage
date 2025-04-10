@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фруктовый Процентоград</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Фруктовый Процентоград</h1>
+        <div class="game-area">
+            <canvas id="gameCanvas"></canvas>
+            <div class="score-container">
+                <div class="score">Счет: <span id="scoreValue">0</span></div>
+                <div class="task" id="currentTask">Найди фрукт, который равен 50%</div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="startButton">Начать игру</button>
+            <div class="level">Уровень: <span id="levelValue">1</span></div>
+        </div>
+        <div class="info-panel">
+            <h2>Что такое проценты?</h2>
+            <p>Процент - это сотая часть числа. Например:</p>
+            <ul>
+                <li>50% - половина или 1/2</li>
+                <li>25% - четверть или 1/4</li>
+                <li>75% - три четверти или 3/4</li>
+                <li>100% - целое</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
